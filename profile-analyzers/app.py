@@ -85,18 +85,29 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route('/upload', methods=['POST'])
 def upload_resume():
-    print("files::",request.files)
-    print("condition",'file' not in request.files)
     if 'file' not in request.files:
         return jsonify({'error': 'No file uploaded'}), 400
+
     file = request.files['file']
-    print("file::",file)
     if file.filename == '':
         return jsonify({'error': 'Empty filename'}), 400
 
     filename = secure_filename(file.filename)
+    
+    # Load existing metadata
+    if os.path.exists(METADATA_PATH):
+        with open(METADATA_PATH, "r") as f:
+            metadata_list = json.load(f)
+    else:
+        metadata_list = []
+
+    # Check for duplicate
+    for entry in metadata_list:
+        if entry.get("filename") == filename:
+            return jsonify({'message': f'Resume "{filename}" already uploaded.', 'metadata': entry}), 409
+
+    # Save the uploaded file
     path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-    print("path",path)
     file.save(path)
 
     # Process
@@ -110,7 +121,7 @@ def upload_resume():
     }
 
     save_to_faiss(embedding, metadata)
-    return jsonify({'message': 'Resume uploaded and embedded', 'metadata': metadata})
+    return jsonify({'message': 'Resume uploaded and embedded', 'metadata': metadata}), 200
 
 @app.route('/search', methods=['GET'])
 def search_resume():

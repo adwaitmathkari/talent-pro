@@ -39,19 +39,34 @@ def send_resume_to_api(github_url, pdf_path):
 
 def submit_employee_details():
     github_url = github_entry.get()
-    if not github_url:
-        messagebox.showwarning("Missing Field", "Please enter your GitHub URL.")
-        return
 
     if not uploaded_pdf_path:
         messagebox.showwarning("Missing PDF", "Please upload your resume PDF.")
         return
 
     status, result = send_resume_to_api(github_url, uploaded_pdf_path)
+
+    # Open a new screen to show result and back button
+    result_window = ctk.CTkToplevel()
+    result_window.geometry("500x400")
+    result_window.title("Submission Result")
+
+    # Response Message
     if status == 200:
-        response_label.configure(text=f"✅ Success:\n{result}", text_color="green")
+        message = f"✅ Success:\n{result}"
+        color = "green"
     else:
-        response_label.configure(text=f"❌ Error {status}:\n{result}", text_color="red")
+        message = f"❌ Error {status}:\n{result}"
+        color = "red"
+
+    ctk.CTkLabel(result_window, text=message, text_color=color, wraplength=450, justify="left").pack(pady=30, padx=20)
+
+    # 🔙 Back Button
+    def go_back():
+        result_window.destroy()  # Close result window
+        open_employee_page()     # Reopen upload screen
+
+    ctk.CTkButton(result_window, text="Back", command=go_back).pack(pady=20)
 
 # Employee Page
 def open_employee_page():
