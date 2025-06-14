@@ -1,0 +1,150 @@
+[
+  {
+    "filename": "Priya_Desai.pdf",
+    "skills": [
+      "Java",
+      "R",
+      "Jenkins",
+      "JIRA",
+      "Cypress",
+      "Selenium",
+      "Postman"
+    ],
+    "length": 439
+  },
+  {
+    "filename": "Karan_Singh.pdf",
+    "skills": [
+      "Python",
+      "Go",
+      "R",
+      "AWS",
+      "Lambda",
+      "Docker",
+      "DynamoDB",
+      "Kafka"
+    ],
+    "length": 448
+  },
+  {
+    "filename": "Riya_Kulkarni.pdf",
+    "skills": [
+      "Python",
+      "R",
+      "SQL",
+      "Pandas",
+      "Scikit-learn",
+      "TensorFlow"
+    ],
+    "length": 415
+  },
+  {
+    "filename": "Siddharth_Rao.pdf",
+    "skills": [
+      "Go",
+      "R",
+      "Node.js",
+      "GraphQL",
+      "MongoDB",
+      "Jest"
+    ],
+    "length": 424
+  },
+  {
+    "filename": "Siddharth_Rao.pdf",
+    "skills": [
+      "Go",
+      "R",
+      "Node.js",
+      "GraphQL",
+      "MongoDB",
+      "Jest"
+    ],
+    "length": 424
+  },
+  {
+    "filename": "Neha_Joshi.pdf",
+    "skills": [
+      "Java",
+      "JavaScript",
+      "TypeScript",
+      "R",
+      "HTML5",
+      "CSS3",
+      "S3"
+    ],
+    "length": 450
+  },
+  {
+    "filename": "Rahul_Verma.pdf",
+    "skills": [
+      "R",
+      "AWS",
+      "Docker",
+      "Kubernetes",
+      "Terraform",
+      "Jenkins"
+    ],
+    "length": 425
+  },
+  {
+    "filename": "Anika_Sharma.pdf",
+    "skills": [
+      "Python",
+      "Go",
+      "Scala",
+      "R",
+      "Django",
+      "Kubernetes",
+      "GitLab CI",
+      "SQL",
+      "PostgreSQL",
+      "Redis",
+      "Pandas",
+      "Git",
+      "GitLab"
+    ],
+    "length": 450
+  },
+  {
+    "filename": "Aarav_Mehta.pdf",
+    "skills": [
+      "Java",
+      "JavaScript",
+      "Go",
+      "Scala",
+      "R",
+      "Node.js",
+      "AWS",
+      "Docker",
+      "MongoDB"
+    ],
+    "length": 480
+  },
+  {
+    "filename": "sample1.pdf",
+    "skills": [
+      "Python",
+      "Java",
+      "JavaScript",
+      "TypeScript",
+      "Go",
+      "R",
+      "Node.js",
+      "GraphQL",
+      "Apollo",
+      "AWS",
+      "Lambda",
+      "EC2",
+      "Terraform",
+      "GitLab CI",
+      "MongoDB",
+      "DynamoDB",
+      "Git",
+      "GitLab",
+      "Jest",
+      "SonarQube"
+    ],
+    "length": 4560
+  }
+]
