@@ -146,5 +146,87 @@
       "SonarQube"
     ],
     "length": 4560
+  },
+  {
+    "filename": "Aarav_Mehta.pdf",
+    "skills": [
+      "Java",
+      "JavaScript",
+      "Go",
+      "Scala",
+      "R",
+      "Node.js",
+      "AWS",
+      "Docker",
+      "MongoDB"
+    ],
+    "length": 480
+  },
+  {
+    "filename": "Anika_Sharma.pdf",
+    "skills": [
+      "Python",
+      "Go",
+      "Scala",
+      "R",
+      "Django",
+      "Kubernetes",
+      "GitLab CI",
+      "SQL",
+      "PostgreSQL",
+      "Redis",
+      "Pandas",
+      "Git",
+      "GitLab"
+    ],
+    "length": 450
+  },
+  {
+    "filename": "Karan_Singh.pdf",
+    "skills": [
+      "Python",
+      "Go",
+      "R",
+      "AWS",
+      "Lambda",
+      "Docker",
+      "DynamoDB",
+      "Kafka"
+    ],
+    "length": 448
+  },
+  {
+    "filename": "Karan_Singh.pdf",
+    "skills": [
+      "Python",
+      "Go",
+      "R",
+      "AWS",
+      "Lambda",
+      "Docker",
+      "DynamoDB",
+      "Kafka"
+    ],
+    "length": 448
+  },
+  {
+    "filename": "Resume_1.pdf",
+    "skills": [
+      "Python",
+      "Java",
+      "JavaScript",
+      "C#",
+      "R",
+      "Angular",
+      "Node.js",
+      "SQL",
+      "MySQL",
+      "Git",
+      "GitHub",
+      "Agile",
+      "Scrum",
+      "TDD"
+    ],
+    "length": 3109
   }
 ]

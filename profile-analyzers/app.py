@@ -85,14 +85,18 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
 @app.route('/upload', methods=['POST'])
 def upload_resume():
+    print("files::",request.files)
+    print("condition",'file' not in request.files)
     if 'file' not in request.files:
         return jsonify({'error': 'No file uploaded'}), 400
     file = request.files['file']
+    print("file::",file)
     if file.filename == '':
         return jsonify({'error': 'Empty filename'}), 400
 
     filename = secure_filename(file.filename)
     path = os.path.join(app.config['UPLOAD_FOLDER'], filename)
+    print("path",path)
     file.save(path)
 
     # Process
